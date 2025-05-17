@@ -11,28 +11,34 @@ if (scrollY >= 50) {
 header.classList.remove("on");
 };
 });
-
+let screenY = this.pageYOffset
+if ( screenY >=50) {
+   header.classList.add("on");
+}else{
+header.classList.remove("on");
+};
 };
 
 
-$(function () {
-  // 패럴렉스 메뉴 이동
-  let menu = $("#header ul>li");
- let section = $("body > section");
-
- menu.on('click',function (event) {
-event.preventDefault();
-  let index = $(this).index();
- let nav = $(section).eq(index).offset().top;
 
 
 
- $("html ,body").animate({scrollTop : nav - 100},600);
 
- });
- 
-  
+// Parallax 메뉴 이동
+let menu = document.querySelectorAll("#header ul>li>a");
+let section = document.querySelectorAll("body > section");
+menu.forEach((navList,index)=>{
+  navList.addEventListener('click',function (e) {
+    e.preventDefault();
+    window.scroll({top:section[index].offsetTop - 100, behavior : 'smooth'});
+  });
 });
+   
+
+
+
+
+
 
 
 
