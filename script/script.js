@@ -16,6 +16,7 @@ header.classList.remove("on");
 
 
 $(function () {
+  // 패럴렉스 메뉴 이동
   let menu = $("#header ul>li");
  let section = $("body > section");
 
