@@ -10,25 +10,15 @@ if (scrollY >= 50) {
 header.classList.remove("on");
 };
   });
-
-
-// let menu = document.querySelectorAll("#header ul>li>a");
-// let section = document.querySelectorAll("body > section");
-// menu.forEach((nav,index)=>{
-//   nav.addEventListener('click',function (event) {
-//     event.preventDefault();
-//     let sectionBox = section[index].offsetTop;
-
-//     window.scroll(0,sectionBox);
-// //   });
-// });
-
-
-
-
-
-
 };
+
+
+
+
+
+
+
+
     
 $(function () {
   let menu = $("#header ul>li");
@@ -38,10 +28,12 @@ $(function () {
 event.preventDefault();
   let index = $(this).index();
  let nav = $(section).eq(index).offset().top;
- console.log(nav);
- 
+ $(menu).removeClass("active");
+$(this).addClass("active");
+
+
  $("html ,body").animate({scrollTop : nav - 100},600);
-  
+
  });
  
   
