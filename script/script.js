@@ -24,8 +24,7 @@ $(function () {
 event.preventDefault();
   let index = $(this).index();
  let nav = $(section).eq(index).offset().top;
- $(menu).removeClass("active");
-$(this).addClass("active");
+
 
 
  $("html ,body").animate({scrollTop : nav - 100},600);
