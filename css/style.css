@@ -251,13 +251,12 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 44px;
   margin-left: 30px;
 
 }
 
 .about-section4>.license {
-  padding-top: 5px;
   margin-left: 30px;
 
 
@@ -267,4 +266,16 @@
   display: block;
   margin: 5px 0;
   font-size: 14px;
+}
+
+/* work */
+#work {
+  background: green;
+  height: 100vh;
+}
+
+/* contact */
+#contact {
+  background: blue;
+  height: 100vh;
 }
