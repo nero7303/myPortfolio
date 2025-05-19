@@ -135,7 +135,16 @@
 
 }
 
-.about-section1>h2 {
+.about-section1>div {
+  /* background: #ccc; */
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+.about-section1>div>h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -145,14 +154,14 @@
 
 }
 
-.about-section1>.profile {
+.about-section1>div>.profile {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   width: 37%;
   margin-top: 30px;
-  margin-left: 130px;
+  margin-left: 100px;
 }
 
 
@@ -327,15 +336,23 @@
     flex-direction: column;
   }
 
-  .about-section1>h2 {
-    margin-left: 0;
+  .about-section1>div {
+    /* background: #ccc; */
+    width: 50%;
   }
 
-  .about-section1>.profile {
+  .about-section1>div>.profile {
+    width: 100%;
     margin-left: 0;
-    width: 50%;
-    justify-content: left;
+    align-items: baseline;
+    /* background: #ededed; */
   }
+
+  .about-section1>div>h2 {
+    margin-left: 38px;
+  }
+
+
 
 
   .about-section2 {
@@ -417,5 +434,24 @@
     margin-left: 0;
 
 
+  }
+}
+
+@media (max-width:900px) {
+  .about-section1>div {
+
+    width: 80%;
+  }
+
+  .about-section2>div {
+    width: 80%;
+  }
+
+  .about-section3>div {
+    width: 80%;
+  }
+
+  .about-section4>div {
+    width: 80%;
   }
 }
