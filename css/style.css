@@ -337,19 +337,19 @@
   }
 
   .about-section1>div {
-    /* background: #ccc; */
+
     width: 50%;
   }
 
   .about-section1>div>.profile {
     width: 100%;
     margin-left: 0;
-    align-items: baseline;
-    /* background: #ededed; */
+
+
   }
 
   .about-section1>div>h2 {
-    margin-left: 38px;
+    text-align: center;
   }
 
 
@@ -438,10 +438,7 @@
 }
 
 @media (max-width:900px) {
-  .about-section1>div {
 
-    width: 80%;
-  }
 
   .about-section2>div {
     width: 80%;
