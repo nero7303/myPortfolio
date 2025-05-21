@@ -40,6 +40,12 @@ menu.forEach((navList,index)=>{
 // Scroll로 나타내기
 function scrollmove() {
   let scroll = window.scrollY;
+
+
+
+  console.log(section[1].offsetTop);
+  
+  
   if (scroll > section[0].offsetTop - 105) {
  
    section[0].classList.add('show');
