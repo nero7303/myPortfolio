@@ -25,7 +25,7 @@ header.classList.remove("on");
 
 
 
-// Parallax 메뉴 이동
+// Parallax Effect 메뉴 이동
 let menu = document.querySelectorAll("#header ul>li>a");
 let section = document.querySelectorAll("body > section");
 menu.forEach((navList,index)=>{
@@ -37,7 +37,7 @@ menu.forEach((navList,index)=>{
   });
 });
 
-// Scroll로 나타내기
+//  Parallax Effect Scroll로 나타내기
 function scrollmove() {
   let scroll = window.scrollY;
 
