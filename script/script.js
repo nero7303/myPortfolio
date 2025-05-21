@@ -32,39 +32,39 @@ menu.forEach((navList,index)=>{
   navList.addEventListener('click',function (e) {
     e.preventDefault();
     window.scroll({top:section[index].offsetTop - 100, behavior : 'smooth'});
-    section[index].classList.add('denote');
-    s
+    section[index].classList.add('show');
+    
   });
 });
 
-
+// Scroll로 나타내기
 function scrollmove() {
   let scroll = window.scrollY;
-  // console.log(scroll);
+  if (scroll > section[0].offsetTop - 105) {
+ 
+   section[0].classList.add('show');
+  }
+   if (scroll > section[1].offsetTop - 105) {
+ 
+   section[1].classList.add('show');
+  }
+  if (scroll > section[2].offsetTop - 105) {
+ 
+   section[2].classList.add('show');
+  }
+  if (scroll > section[3].offsetTop - 105) {
+ 
+   section[3].classList.add('show');
+  }
+   
+ };
+ window.addEventListener('scroll',scrollmove);
+   
+   
+
 
   
   
- if (scroll > section[0].offsetTop - 105) {
-
-  section[0].classList.add('denote');
- }
-  if (scroll > section[1].offsetTop - 105) {
-
-  section[1].classList.add('denote');
- }
- if (scroll > section[2].offsetTop - 105) {
-
-  section[2].classList.add('denote');
- }
- if (scroll > section[3].offsetTop - 105) {
-
-  section[3].classList.add('denote');
- }
-  
-};
-  
-  
-window.addEventListener('scroll',scrollmove);
 
 
 
