@@ -4,13 +4,14 @@ window.onload = ()=>{
     // on 클래스 추가
 let header = document.getElementById('header');
 window.addEventListener('scroll',function () {
-  let scrollY = this.scrollY
+  let scrollY = this.scrollY    
 if (scrollY >= 50) {
     header.classList.add("on");
 }else{
 header.classList.remove("on");
 };
 });
+// 
 let screenY = this.pageYOffset
 if ( screenY >=50) {
    header.classList.add("on");
@@ -33,6 +34,8 @@ menu.forEach((navList,index)=>{
     window.scroll({top:section[index].offsetTop - 100, behavior : 'smooth'});
   });
 });
+
+
    
 
 

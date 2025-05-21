@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans+KR&display=swap');
 
 
 
@@ -8,14 +9,15 @@
   height: 100px;
   position: fixed;
   z-index: 1000;
-  backdrop-filter: blur(5px);
-
 
 }
+
+
 
 #header.on {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 1s;
+  backdrop-filter: blur(5px);
 }
 
 .header-inner {
@@ -24,9 +26,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-
-
 }
+
+
+
 
 
 
@@ -48,11 +51,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 700;
-  color: #1B56FD;
+  color: #0118D8;
 }
 
 .nav>ul>li>a:hover {
-  color: #0118D8;
   text-decoration: underline;
   transition: all 0.7s;
 }
@@ -66,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../imgaes/sky.png) no-repeat center;
+  background: url(../imgaes/computer.png) no-repeat center;
   background-size: cover;
 
 
@@ -84,8 +86,16 @@
   width: 1160px;
   height: 300px;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
 
 
+}
+
+.home-inner:hover,
+.home-inner:focus {
+  border-radius: 50px;
+  transition: all 0.7s;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -103,16 +113,19 @@
   color: #0118D8;
 
 
+
 }
 
 .home-inner>p {
+  font-family: "Noto Sans KR", sans-serif;
   margin-top: 30px;
   padding-left: 20px;
   font-size: 20px;
   line-height: 1.6;
-  color: #000;
+  font-weight: 400;
 
 }
+
 
 /* about */
 
@@ -186,10 +199,11 @@
 }
 
 .profile>ul>li {
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 300;
   text-align: center;
-
   font-size: 15px;
+
 }
 
 
@@ -203,7 +217,7 @@
 }
 
 .about-section2>div>p {
-
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin-top: 10px;
@@ -226,12 +240,14 @@
 }
 
 .about-section3 ul>li {
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
   font-size: 14px;
   padding: 5px 0;
 }
 
 .about-section3 ul>li>strong {
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   font-size: 14px;
   padding-left: 10px;
@@ -280,6 +296,7 @@
 }
 
 .about-section4>div>.license>span {
+  font-family: "Noto Sans KR", sans-serif;
   display: block;
   margin: 5px 0;
   font-size: 14px;
@@ -293,168 +310,8 @@
 
 /* contact */
 #contact {
-  background: blue;
+  background: url(../imgaes/sky.png) no-repeat center;
+  background-size: cover;
+  opacity: 95%;
   height: 100vh;
-}
-
-@media (max-width : 1200px) {
-
-
-
-  .nav>ul {
-
-    display: none;
-  }
-
-
-
-  /* home */
-
-
-  .home-inner {
-    width: 100%;
-  }
-
-  #about {
-    height: 2000px;
-  }
-
-  .about-inner {
-    width: 100%;
-    height: inherit;
-  }
-
-  .about-inner>div {
-    width: 100%;
-    height: 500px;
-
-  }
-
-
-
-
-
-
-  .about-section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .about-section1>div {
-
-    width: 50%;
-  }
-
-  .about-section1>div>.profile {
-    width: 100%;
-    margin-left: 0;
-
-
-  }
-
-  .about-section1>div>h2 {
-    text-align: center;
-  }
-
-
-
-
-  .about-section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .about-section2>div {
-    width: 50%;
-  }
-
-  .about-section2>div>h3 {
-    margin-left: 0;
-
-  }
-
-  .about-section2>div>p {
-    padding: 0 10px 0 0;
-    margin-left: 0;
-
-  }
-
-
-  .about-section3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .about-section3>div {
-    width: 50%;
-
-  }
-
-  .about-section3>div>h3 {
-    margin-left: 0;
-
-  }
-
-  .about-section3 ul {
-    margin-left: 0;
-
-  }
-
-
-
-
-
-  .about-section4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .about-section4>div {
-    width: 50%;
-  }
-
-
-  .about-section4>div>ul {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .about-section4>div>h3 {
-    margin-left: 0;
-  }
-
-
-  .about-section4>div>h4 {
-    margin-left: 0;
-  }
-
-  .about-section4>div>.license {
-    margin-left: 0;
-
-
-  }
-}
-
-@media (max-width:900px) {
-
-
-  .about-section2>div {
-    width: 80%;
-  }
-
-  .about-section3>div {
-    width: 80%;
-  }
-
-  .about-section4>div {
-    width: 80%;
-  }
 }
