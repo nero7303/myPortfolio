@@ -3,12 +3,29 @@
 
 
 
+/* 애니메이션 */
+
+
+body>section {
+  opacity: 0;
+}
+
+body>section.denote {
+  opacity: 1;
+  transition: all 1s;
+}
+
+
+
+
 /* header */
 #header {
   width: 100%;
   height: 100px;
   position: fixed;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.3);
+
 
 }
 
@@ -18,6 +35,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 1s;
   backdrop-filter: blur(5px);
+
 }
 
 .header-inner {
@@ -26,6 +44,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
+
 }
 
 
@@ -312,6 +331,5 @@
 #contact {
   background: url(../imgaes/sky.png) no-repeat center;
   background-size: cover;
-  opacity: 95%;
   height: 100vh;
 }
