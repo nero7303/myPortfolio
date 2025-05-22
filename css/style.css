@@ -8,6 +8,18 @@
 /* 클래스 show를 추가하기 전 */
 body>section>.home-inner {
   opacity: 0;
+  transition: all 1s ease-in;
+
+}
+
+.home-inner>h2 {
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all 1s ease-out;
+}
+
+.home-inner>p {
+  opacity: 0;
   transform: translateY(200px);
   transition: all 1s ease-out;
 }
@@ -41,9 +53,20 @@ body>section .about-inner>.about-section2 {
 /* 클래스 show를 추가할때 */
 body>section.show>.home-inner {
   opacity: 1;
+
+}
+
+.home-inner>h2.show {
+  opacity: 1;
   transform: translateY(0);
 
 }
+
+.home-inner>p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .about-section1>div>h2.show {
 
@@ -234,7 +257,7 @@ body>section.show .about-inner>.about-section2 {
   font-weight: 700;
   font-size: 40px;
   margin-top: 120px;
-
+  text-align: center;
 
 
 }
@@ -268,10 +291,10 @@ body>section.show .about-inner>.about-section2 {
   font-weight: 400;
   text-align: center;
   font-size: 15px;
-  margin: 2.5px 0;
+  margin: 5px 0;
 }
 
-.profile>ul>li:nth-of-type(6) {
+.profile>ul>li:nth-of-type(5) {
   position: relative;
   margin-top: 10px;
   animation: bounce 0.7s 1s infinite alternate ease-in-out;

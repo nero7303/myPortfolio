@@ -24,6 +24,10 @@ header.classList.remove("on");
 
 
 
+let homeInner_h2 = document.querySelector('.home-inner>h2');
+let homeInner_p = document.querySelector('.home-inner > p');
+let profile = document.querySelector('.profile');
+let h2 = document.querySelector('.about-section1>div>h2 ');
 
 // Parallax Effect 메뉴 이동
 let menu = document.querySelectorAll("#header ul>li>a");
@@ -33,6 +37,8 @@ menu.forEach((navList,index)=>{
     e.preventDefault();
     window.scroll({top:section[index].offsetTop - 100, behavior : 'smooth'});
     section[index].classList.add('show');
+      homeInner_h2.classList.add('show');
+      homeInner_p.classList.add('show');
     
   });
 });
@@ -40,13 +46,10 @@ menu.forEach((navList,index)=>{
 //  Parallax Effect Scroll로 나타내기
 function scrollmove() {
   let scroll = window.scrollY;
-  let profile = document.querySelector('.profile');
-  let h2 = document.querySelector('.about-section1>div>h2 ');
-
-  
   if (scroll > section[0].offsetTop - 105) {
- 
-   section[0].classList.add('show');
+    section[0].classList.add('show');
+    homeInner_h2.classList.add('show');
+      homeInner_p.classList.add('show');
   }
    if (scroll > section[1].offsetTop - 105) {
  
