@@ -1,16 +1,29 @@
 
-
+let homeInner_h2 = document.querySelector('.home-inner>h2');
+let homeInner_p = document.querySelector('.home-inner > p');
+let profile = document.querySelector('.profile');
+let h2 = document.querySelector('.about-section1>div>h2 ');
 window.onload = ()=>{
     // on 클래스 추가
 let header = document.getElementById('header');
 window.addEventListener('scroll',function () {
-  let scrollY = this.scrollY    
+  let scrollY = this.scrollY  
+    
 if (scrollY >= 50) {
     header.classList.add("on");
 }else{
 header.classList.remove("on");
 };
+// 
+
+
+
+
 });
+
+
+
+
 // 
 let screenY = this.pageYOffset
 if ( screenY >=50) {
@@ -24,10 +37,6 @@ header.classList.remove("on");
 
 
 
-let homeInner_h2 = document.querySelector('.home-inner>h2');
-let homeInner_p = document.querySelector('.home-inner > p');
-let profile = document.querySelector('.profile');
-let h2 = document.querySelector('.about-section1>div>h2 ');
 
 // Parallax Effect 메뉴 이동
 let menu = document.querySelectorAll("#header ul>li>a");
@@ -39,7 +48,6 @@ menu.forEach((navList,index)=>{
     section[index].classList.add('show');
       homeInner_h2.classList.add('show');
       homeInner_p.classList.add('show');
-    
   });
 });
 

@@ -338,6 +338,17 @@ body>section.show .about-inner>.about-section2 {
 
 }
 
+/* skills */
+#skills {
+  background: skyblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 
 
 /* work */
@@ -345,6 +356,8 @@ body>section.show .about-inner>.about-section2 {
   background: mediumaquamarine;
   height: 100vh;
 }
+
+
 
 /* contact */
 #contact {
