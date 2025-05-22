@@ -40,7 +40,10 @@ menu.forEach((navList,index)=>{
 //  Parallax Effect Scroll로 나타내기
 function scrollmove() {
   let scroll = window.scrollY;
-
+  let profile = document.querySelector('.profile');
+  let h2 = document.querySelector('.about-section1>div>h2 ');
+  console.log(profile);
+  
 
 
   console.log(section[1].offsetTop);
@@ -53,6 +56,8 @@ function scrollmove() {
    if (scroll > section[1].offsetTop - 105) {
  
    section[1].classList.add('show');
+   profile.classList.add('show');
+   h2.classList.add('show');
   }
   if (scroll > section[2].offsetTop - 105) {
  
