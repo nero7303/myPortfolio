@@ -93,6 +93,21 @@ body>section.show .about-inner>.about-section2 {
 }
 
 
+/* 한 글자씩 나오기 */
+
+.split>span {
+  opacity: 0;
+  font-size: 40px;
+  transition: all .3s ease-out;
+}
+
+.split>span.visible {
+  opacity: 1;
+  font-size: 30px;
+
+}
+
+
 /* header */
 #header {
   width: 100%;
