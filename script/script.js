@@ -1,4 +1,4 @@
- homeInner_h2 = document.querySelector('.home-inner>h2');
+homeInner_h2 = document.querySelector('.home-inner>h2');
 let homeInner_p = document.querySelector('.home-inner > p');
 let profile = document.querySelector('.profile');
 let h2 = document.querySelector('.about-section1>div>h2 ');
@@ -21,6 +21,7 @@ header.classList.remove("on");
 let screenY = this.pageYOffset
 if ( screenY >=50) {
    header.classList.add("on");
+   
 }else{
 header.classList.remove("on");
 };
@@ -48,52 +49,46 @@ menu.forEach((navList,index)=>{
     section[index].classList.add('show');
       homeInner_h2.classList.add('show');
       homeInner_p.classList.add('show');
+      profile.classList.add('show');
+      h2.classList.add('show');
+      section[1].classList.add('show');
+      
   });
 });
 
 //  Parallax Effect Scroll로 나타내기
 function scrollmove() {
   let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > section[0].offsetTop - 105) {
+  if (scrollTop > section[0].offsetTop - window.innerHeight ) {
     section[0].classList.add('show');
     homeInner_h2.classList.add('show');
       homeInner_p.classList.add('show');
   }
-   if (scrollTop > section[1].offsetTop - 105) {
+   if (scrollTop > section[1].offsetTop - window.innerHeight / 3) {
  
    section[1].classList.add('show');
    profile.classList.add('show');
    h2.classList.add('show');
  
   }
-  if (scrollTop > section[2].offsetTop - 105) {
+  if (scrollTop > section[2].offsetTop - window.innerHeight ) {
  
    section[2].classList.add('show');
+  }
+
+  if (scrollTop > section[4].offsetTop - window.innerHeight / 3 ) {
+      section[4].classList.add('show');  
   }
 
 };
 window.addEventListener('scroll',scrollmove);
 
-//  Parallax Effect Text효과 나타내기
-
-let text = document.querySelector('.split').innerText;
-
-let split = text.split('').join('</span><span aria-hidden = "true">');
-split = '<span aria-hidden ="true">' + split + '</span>';
-document.querySelector('.split').innerHTML = split;
-document.querySelector('.split').setAttribute("aria-label",text);
-
-window.addEventListener('scroll',()=>{
-  let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > section[1].offsetTop - 105) {
-    document.querySelectorAll('.split span').forEach((el, index)=>{
-      setTimeout(()=>{
-        el.classList.add('visible');
-      }, 50 * index );
-    });
-  }
-});
   
+
+
+
+
+
   
    
   

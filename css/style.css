@@ -42,7 +42,7 @@ body>section>.home-inner {
 body>section .about-inner>.about-section2 {
   opacity: 0;
   transform: translateX(200px);
-  transition: all 1s ease-out;
+  transition: all 1s ease-in-out;
 }
 
 
@@ -75,6 +75,16 @@ body>section.show>.home-inner {
 
 }
 
+#contact {
+  opacity: 0;
+  transition: all 1s linear;
+  transform: translateY(-500px);
+}
+
+#contact.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -88,24 +98,14 @@ body>section.show>.home-inner {
 
 body>section.show .about-inner>.about-section2 {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+
 
 }
 
 
-/* 한 글자씩 나오기 */
 
-.split>span {
-  opacity: 0;
-  font-size: 40px;
-  transition: all .3s ease-out;
-}
 
-.split>span.visible {
-  opacity: 1;
-  font-size: 30px;
-
-}
 
 
 /* header */
@@ -114,7 +114,7 @@ body>section.show .about-inner>.about-section2 {
   height: 100px;
   position: fixed;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
 
 
 }
@@ -153,7 +153,7 @@ body>section.show .about-inner>.about-section2 {
 .nav>ul {
   display: flex;
   padding-right: 20px;
-  gap: 21px;
+  gap: 17px;
 }
 
 .nav>ul>li>a {
@@ -376,7 +376,59 @@ body>section.show .about-inner>.about-section2 {
 
 /* contact */
 #contact {
-  background: url(../imgaes/sky.png) no-repeat center;
+  background: url(../imgaes/contactBg.png) no-repeat bottom;
   background-size: cover;
-  height: 100vh;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact>div {
+  width: 1160px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+
+#contact>div>h2 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+#contact>div>strong {
+
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 80px;
+
+}
+
+#contact>div>p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+#contact>div>.link>ul {
+  display: flex;
+  gap: 10px;
+
+}
+
+#contact>div>.link>ul>li>a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+
 }
