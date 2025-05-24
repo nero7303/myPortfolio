@@ -78,7 +78,7 @@ body>section.show>.home-inner {
 #contact {
   opacity: 0;
   transition: all 1s linear;
-  transform: translateY(-500px);
+  transform: translateY(-900px);
 }
 
 #contact.show {
@@ -368,8 +368,10 @@ body>section.show .about-inner>.about-section2 {
 
 /* work */
 #work {
+  position: relative;
   background: mediumaquamarine;
   height: 100vh;
+  z-index: 100;
 }
 
 
