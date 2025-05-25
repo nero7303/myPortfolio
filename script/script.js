@@ -25,21 +25,6 @@ if (window.screenY >=50) {
 }
 });
 
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Parallax Effect 메뉴 이동
@@ -94,6 +79,21 @@ function scrollmove() {
     
   });
    
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
