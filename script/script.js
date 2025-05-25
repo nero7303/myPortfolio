@@ -1,23 +1,30 @@
 window.addEventListener('DOMContentLoaded',function () {
-  homeInner_h2 = document.querySelector('.home-inner>h2');
+let homeInner_h2 = document.querySelector('.home-inner>h2');
 let homeInner_p = document.querySelector('.home-inner > p');
 let profile = document.querySelector('.profile');
+
+// 텍스트 쪼개기
 let h2 = document.querySelector('.about-section1>div>h2 ');
-window.onload = ()=>{
+let text = document.querySelector("#contact>div>h2").innerText;
+let split = text.split('').join("</span><span>");
+split = "<span>" + split + "</span>";
+document.querySelector("#contact>div>h2").innerHTML = split;
+
+// on 클래스 추가
+let header = document.getElementById('header');
+window.addEventListener('scroll',function () {
+let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
   
-  // on 클래스 추가
-  let header = document.getElementById('header');
-  window.addEventListener('scroll',function () {
-  let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-    
 if (scrollTop >= 50) {
-    header.classList.add("on");
+  header.classList.add("on");
 }else{
 header.classList.remove("on");
 };
- 
 });
-};
+
+  
+ 
+
 
 
 
@@ -65,28 +72,34 @@ function scrollmove() {
   }
 
   if (scrollTop > section[4].offsetTop - window.innerHeight / 4  ) {
-      let h2 = document.querySelector('#contact>div>h2');
-      h2.classList.add('show');
-        let strong = document.querySelector('#contact>div>strong');
-        strong.classList.add('show');
-        let p = document.querySelector('#contact>div>p');
-        p.classList.add('show');
-        let link = document.querySelector('#contact>div>.link>ul');
-        link.classList.add('show');
-  }
+    let h2 = document.querySelector('#contact>div>h2');
+    h2.classList.add('show');
+      let strong = document.querySelector('#contact>div>strong');
+      strong.classList.add('show');
+      let p = document.querySelector('#contact>div>p');
+      p.classList.add('show');
+      let link = document.querySelector('#contact>div>.link>ul');
+      link.classList.add('show');
+         document.querySelectorAll("#contact>div>h2>span").forEach((elem, index) => {
+        setTimeout(() => {
+          elem.classList.add("show");
+        }, 50 * index)})
+      };
+    };
+    window.addEventListener('scroll',scrollmove);
 
-};
-window.addEventListener('scroll',scrollmove);
-});
-
-  
-
-
-
-
-
-  
+    
+  });
    
+
+
+
+
+  
+
+
+
+
   
   
 

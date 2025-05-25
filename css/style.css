@@ -131,7 +131,14 @@ body>section.show .about-inner>.about-section2 {
   transform: translateY(0);
 }
 
+#contact>div>h2>span {
+  opacity: 0;
+  transition: all 0.3s;
+}
 
+#contact>div>h2>span.show {
+  opacity: 1;
+}
 
 
 
