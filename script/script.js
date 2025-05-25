@@ -55,8 +55,7 @@ function scrollmove() {
  
   }
   if (scrollTop > section[2].offsetTop - window.innerHeight ) {
- 
-   section[2].classList.add('show');
+  
   }
 
   if (scrollTop > section[4].offsetTop - window.innerHeight / 3 ) {

@@ -411,13 +411,10 @@ body>section.show .about-inner>.about-section2 {
 
 /* skills */
 #skills {
-  background: skyblue;
+  background: #FFF8F8;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+
+
 }
 
 
