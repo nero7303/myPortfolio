@@ -20,6 +20,9 @@ if (scrollTop >= 50) {
 }else{
 header.classList.remove("on");
 };
+if (window.screenY >=50) {
+  header.classList.add("on");
+}
 });
 
   
