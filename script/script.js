@@ -1,4 +1,5 @@
-homeInner_h2 = document.querySelector('.home-inner>h2');
+window.addEventListener('DOMContentLoaded',function () {
+  homeInner_h2 = document.querySelector('.home-inner>h2');
 let homeInner_p = document.querySelector('.home-inner > p');
 let profile = document.querySelector('.profile');
 let h2 = document.querySelector('.about-section1>div>h2 ');
@@ -16,16 +17,8 @@ header.classList.remove("on");
 };
  
 });
+};
 
-// 
-let screenY = this.pageYOffset
-if ( screenY >=50) {
-   header.classList.add("on");
-   
-}else{
-header.classList.remove("on");
-};
-};
 
 
 
@@ -46,12 +39,7 @@ menu.forEach((navList,index)=>{
   navList.addEventListener('click',function (e) {
     e.preventDefault();
     window.scroll({top:section[index].offsetTop - 100, behavior : 'smooth'});
-    section[index].classList.add('show');
-      homeInner_h2.classList.add('show');
-      homeInner_p.classList.add('show');
-      profile.classList.add('show');
-      h2.classList.add('show');
-      section[1].classList.add('show');
+
       
   });
 });
@@ -89,6 +77,7 @@ function scrollmove() {
 
 };
 window.addEventListener('scroll',scrollmove);
+});
 
   
 
