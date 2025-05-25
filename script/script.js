@@ -74,7 +74,7 @@ function scrollmove() {
    section[2].classList.add('show');
   }
 
-  if (scrollTop > section[4].offsetTop - window.innerHeight / 4  ) {
+  if (scrollTop > section[4].offsetTop - window.innerHeight / 3 ) {
     let h2 = document.querySelector('#contact>div>h2');
     h2.classList.add('show');
       let strong = document.querySelector('#contact>div>strong');
