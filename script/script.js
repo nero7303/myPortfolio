@@ -76,8 +76,15 @@ function scrollmove() {
    section[2].classList.add('show');
   }
 
-  if (scrollTop > section[4].offsetTop - window.innerHeight / 3 ) {
-      section[4].classList.add('show');  
+  if (scrollTop > section[4].offsetTop - window.innerHeight / 4  ) {
+      let h2 = document.querySelector('#contact>div>h2');
+      h2.classList.add('show');
+        let strong = document.querySelector('#contact>div>strong');
+        strong.classList.add('show');
+        let p = document.querySelector('#contact>div>p');
+        p.classList.add('show');
+        let link = document.querySelector('#contact>div>.link>ul');
+        link.classList.add('show');
   }
 
 };

@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
 
-
 /* 애니메이션 */
 
-/* 클래스 show를 추가하기 전 */
 body>section>.home-inner {
   opacity: 0;
   transition: all 1s ease-in;
+
+}
+
+body>section.show>.home-inner {
+  opacity: 1;
 
 }
 
@@ -18,53 +21,28 @@ body>section>.home-inner {
   transition: all 1s ease-out;
 }
 
-.home-inner>p {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 1s ease-out;
-}
-
-.about-section1>div>h2 {
-  opacity: 0;
-  transition: all 1.5s linear;
-
-}
-
-
-
-.about-section1>div>.profile {
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  transform: rotateY(180deg) perspective(800px);
-
-}
-
-body>section .about-inner>.about-section2 {
-  opacity: 0;
-  transform: translateX(200px);
-  transition: all 1s ease-in-out;
-}
-
-
-
-
-
-
-/* 클래스 show를 추가할때 */
-body>section.show>.home-inner {
-  opacity: 1;
-
-}
-
 .home-inner>h2.show {
   opacity: 1;
   transform: translateY(0);
 
 }
 
+.home-inner>p {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 1s ease-out;
+}
+
 .home-inner>p.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+.about-section1>div>h2 {
+  opacity: 0;
+  transition: all 1.5s linear;
+
 }
 
 
@@ -75,18 +53,13 @@ body>section.show>.home-inner {
 
 }
 
-#contact {
+
+.about-section1>div>.profile {
   opacity: 0;
-  transition: all 1s linear;
-  transform: translateY(-900px);
+  transition: all 1s ease-in-out;
+  transform: rotateY(180deg) perspective(800px);
+
 }
-
-#contact.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 
 
 .about-section1>div>.profile.show {
@@ -96,12 +69,85 @@ body>section.show>.home-inner {
 
 }
 
+body>section .about-inner>.about-section2 {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1s ease-in-out;
+}
+
 body>section.show .about-inner>.about-section2 {
   opacity: 1;
   transform: translateX(0);
 
 
 }
+
+
+#contact>div>h2 {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1s linear;
+
+}
+
+#contact>div>h2.show {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+#contact>div>strong {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1s linear;
+}
+
+
+
+#contact>div>strong.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#contact>div>p {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1s linear;
+}
+
+#contact>div>p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#contact>div>.link>ul {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1s linear;
+}
+
+#contact>div>.link>ul.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,7 +352,7 @@ body>section.show .about-inner>.about-section2 {
   font-weight: 400;
   text-align: center;
   font-size: 15px;
-  margin: 5px 0;
+  margin: 5.5px 0;
 }
 
 .profile>ul>li:nth-of-type(5) {
@@ -368,10 +414,10 @@ body>section.show .about-inner>.about-section2 {
 
 /* work */
 #work {
-  position: relative;
+
   background: mediumaquamarine;
   height: 100vh;
-  z-index: 100;
+
 }
 
 
