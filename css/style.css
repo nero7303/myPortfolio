@@ -82,6 +82,26 @@ body>section.show .about-inner>.about-section2 {
 
 }
 
+.skills-inner {
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+.skills-inner.show {
+  opacity: 1;
+}
+
+.card>p>span {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.card>p>span.show {
+  opacity: 1;
+
+}
+
+
 
 #contact>div>h2 {
   opacity: 0;
@@ -412,11 +432,46 @@ body>section.show .about-inner>.about-section2 {
 /* skills */
 #skills {
   background: #FFF8F8;
+  height: 800px;
+}
+
+#skills>div {
+  width: 1160px;
   height: 100vh;
+  margin: 0 auto;
+}
+
+#skills>div>h2 {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.card-list {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
 }
 
+.card {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
 
+.card>img {
+  width: 60px;
+}
+
+.card>p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
 
 
 
