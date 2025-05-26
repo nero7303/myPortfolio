@@ -71,35 +71,23 @@ body>section.show>.home-inner {
 
 body>section .about-inner>.about-section2 {
   opacity: 0;
-  transform: translateX(200px);
-  transition: all 1s ease-in-out;
+  transition: all 1s linear;
 }
 
 body>section.show .about-inner>.about-section2 {
   opacity: 1;
-  transform: translateX(0);
-
-
 }
 
-.skills-inner {
+.split>span {
   opacity: 0;
-  transition: all 1s linear;
+  transition: all .3s;
 }
 
-.skills-inner.show {
-  opacity: 1;
-}
-
-.card>p>span {
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.card>p>span.show {
+.split>span.show {
   opacity: 1;
 
 }
+
 
 
 
@@ -317,7 +305,6 @@ body>section.show .about-inner>.about-section2 {
 
 .about-inner {
   width: 1160px;
-  height: inherit;
   margin: 0 auto;
   display: flex;
 
@@ -428,50 +415,6 @@ body>section.show .about-inner>.about-section2 {
   line-height: 1.8;
 
 }
-
-/* skills */
-#skills {
-  background: #FFF8F8;
-  height: 800px;
-}
-
-#skills>div {
-  width: 1160px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-#skills>div>h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.card-list {
-  width: 100%;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.card>img {
-  width: 60px;
-}
-
-.card>p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
 
 
 /* work */

@@ -3,14 +3,10 @@ window.addEventListener('DOMContentLoaded',function () {
   let homeInner_p = document.querySelector('.home-inner > p');
   let profile = document.querySelector('.profile');
 
-  //텍스트 쪼개기 - .card > p
-  let card = document.querySelectorAll('.card > p');
-  card.forEach((element )=>{
-    let txt = element.innerText ;
-   let split =  txt.split('').join('</span><span>');
-    element.innerHTML = '<span>' + split+ '</span>';
-
-  });
+  //텍스트 쪼개기 - .about-section2>div>h3
+  let Content = document.querySelector('.split').innerText;
+   let txt = Content.split('').join('</span><span>');
+   document.querySelector('.split').innerHTML = '<span>' + txt + '</span>';
 
   
   // 텍스트 쪼개기 - contact me
@@ -63,15 +59,14 @@ window.addEventListener('DOMContentLoaded',function () {
      section[1].classList.add('show');
      profile.classList.add('show');
      h2.classList.add('show');
-    }if (scrollTop > section[2].offsetTop - window.innerHeight / 3) {
-      document.querySelector('.skills-inner').classList.add('show');
-      document.querySelectorAll('.card > p > span').forEach((el,index)=>{
-        setTimeout(()=>{
-          el.classList.add('show');
-        },20 * index) });
+      document.querySelectorAll('.split>span').forEach((elem , index)=>{
+        setTimeout(() => {
+            elem.classList.add('show');
+        }, 50 * index);
+      });
+
     }
-   
-    if (scrollTop > section[4].offsetTop - window.innerHeight / 3 ) {
+    if (scrollTop > section[3].offsetTop - window.innerHeight / 3 ) {
       let h2 = document.querySelector('#contact>div>h2');
       h2.classList.add('show');
         let strong = document.querySelector('#contact>div>strong');
