@@ -443,24 +443,23 @@ body>section.show .about-inner>.about-section2 {
 
 #skills>div>h2 {
   font-family: "Montserrat", sans-serif;
-  padding-top: 30px;
   font-weight: bold;
   font-size: 40px;
 }
 
 .card-list {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 
 }
 
 .card {
   display: flex;
   align-items: center;
-  gap: 38px;
+  gap: 40px;
 }
 
 .card>img {
