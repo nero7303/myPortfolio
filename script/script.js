@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded',function () {
   //  Parallax Effect Scroll로 나타내기
   function scrollmove() {
     let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > section[0].offsetTop - window.innerHeight ) {
+    if (scrollTop >section[0].offsetTop - window.innerHeight ) {
       section[0].classList.add('show');
       homeInner_h2.classList.add('show');
         homeInner_p.classList.add('show');
