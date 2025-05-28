@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',function () {
+
   let homeInner_h2 = document.querySelector('.home-inner>h2');
   let homeInner_p = document.querySelector('.home-inner > p');
   let profile = document.querySelector('.profile');
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded',function () {
       });
 
     }
-    if (scrollTop > section[3].offsetTop - window.innerHeight / 3 ) {
+    if (scrollTop > section[3].offsetTop - window.innerHeight / 3  ) {
       let h2 = document.querySelector('#contact>div>h2');
       h2.classList.add('show');
         let strong = document.querySelector('#contact>div>strong');
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded',function () {
       window.addEventListener('scroll',scrollmove);
   
       
-    });
+
 
 
 
