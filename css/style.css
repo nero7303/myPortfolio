@@ -113,7 +113,7 @@ body>section.show .about-inner>.about-section2 {
 #contact {
   opacity: 0;
   transform: translateY(9rem) scale(0.8);
-  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 1.2s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 #contact.show {
@@ -122,6 +122,40 @@ body>section.show .about-inner>.about-section2 {
 }
 
 
+#contact>div>h2 {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(-200px);
+}
+
+#contact>div>h2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+#contact>div>strong {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(-200px);
+}
+
+#contact>div>strong.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#contact>div>p {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(-200px);
+}
+
+#contact>div>p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 

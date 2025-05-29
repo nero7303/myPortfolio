@@ -10,12 +10,9 @@
    document.querySelector('.split').innerHTML = '<span>' + txt + '</span>';
 
   
-  // 텍스트 쪼개기 - contact me
-  let h2 = document.querySelector('.about-section1>div>h2 ');
-  let text = document.querySelector("#contact>div>h2").innerText;
-  let split = text.split('').join("</span><span>");
-  split = "<span>" + split + "</span>";
-  document.querySelector("#contact>div>h2").innerHTML = split;
+
+
+
 
   
   // on 클래스 추가
@@ -59,6 +56,7 @@
    
      section[1].classList.add('show');
      profile.classList.add('show');
+       let h2 = document.querySelector('.about-section1>div>h2 ');
      h2.classList.add('show');
       document.querySelectorAll('.split>span').forEach((elem , index)=>{
         setTimeout(() => {
@@ -78,12 +76,7 @@
         strong.classList.add('show');
         let p = document.querySelector('#contact>div>p');
         p.classList.add('show');
-        let link = document.querySelector('#contact>div>.link>ul');
-        link.classList.add('show');
-           document.querySelectorAll("#contact>div>h2>span").forEach((elem, index) => {
-          setTimeout(() => {
-            elem.classList.add("show");
-          }, 50 * index)})
+
         };
       };
       window.addEventListener('scroll',scrollmove);
