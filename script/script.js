@@ -51,11 +51,11 @@
   function scrollmove() {
     let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop >section[0].offsetTop - window.innerHeight ) {
-      section[0].classList.add('show');
+      section[0].classList.add('show');    
       homeInner_h2.classList.add('show');
         homeInner_p.classList.add('show');
     }
-     if (scrollTop > section[1].offsetTop - window.innerHeight / 3) {
+     if (scrollTop > section[1].offsetTop - window.innerHeight / 4) {
    
      section[1].classList.add('show');
      profile.classList.add('show');
@@ -67,7 +67,11 @@
       });
 
     }
-    if (scrollTop > section[3].offsetTop - window.innerHeight / 3  ) {
+    if (scrollTop > section[2].offsetTop - window.innerHeight / 4 ) {
+      section[2].classList.add('show');
+    }
+    if (scrollTop > section[3].offsetTop - window.innerHeight / 4 ) {
+      section[3].classList.add('show');
       let h2 = document.querySelector('#contact>div>h2');
       h2.classList.add('show');
         let strong = document.querySelector('#contact>div>strong');
@@ -88,12 +92,6 @@
     
 
 
-
-ScrollOut({
-once : true
-});
-  
-  
 
 
 
