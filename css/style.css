@@ -423,11 +423,11 @@ body>section.show .about-inner>.about-section2 {
 
 /* work */
 #work {
-
-  background: mediumaquamarine;
   height: 100vh;
-
+  background: #000;
 }
+
+
 
 
 
@@ -488,4 +488,21 @@ body>section.show .about-inner>.about-section2 {
   font-weight: 400;
   color: #fff;
 
+}
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(9rem) scale(0.8);
+  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+}
+
+[data-scroll="out"] {
+  opacity: 0;
 }

@@ -1,4 +1,5 @@
 
+  
   let homeInner_h2 = document.querySelector('.home-inner>h2');
   let homeInner_p = document.querySelector('.home-inner > p');
   let profile = document.querySelector('.profile');
@@ -82,9 +83,17 @@
         };
       };
       window.addEventListener('scroll',scrollmove);
-  
-      
 
+
+    
+
+
+
+ScrollOut({
+once : true
+});
+  
+  
 
 
 

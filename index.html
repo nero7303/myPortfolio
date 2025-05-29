@@ -28,9 +28,9 @@
     </div>
   </header>
   <!-- home -->
-  <section id="home" class="parallax__item">
+  <section id="home">
     <div class="home-inner">
-      <h2>KWON YOUNG BIN <br>
+      <h2 id="type">KWON YOUNG BIN <br>
         PORTFOLIO
       </h2>
       <p>저는 새로운 기술을 배우고 직접 프로젝트에 적용해보는 과정을 좋아해요. <br>
@@ -39,7 +39,7 @@
     </div>
   </section>
   <!-- about -->
-  <section id="about" class="parallax__item">
+  <section id="about" data-scroll>
     <div class="about-inner">
       <div class="about-section1">
         <div class="about-section1-inner">
@@ -72,8 +72,10 @@
         </div>
       </div>
   </section>
-  <section id="work" class="parallax__item">4</section>
-  <section id="contact" class="parallax__item">
+  <section id="work" data-scroll>
+
+  </section>
+  <section id="contact" data-scroll>
     <div class="contact-inner">
       <h2>CONTACT ME </h2>
       <strong>bin1018119@gmail.com</strong>
@@ -87,7 +89,9 @@
     </div>
   </section>
 
-  <script src="./script/script.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="./script/script.js" defer></script>
+
 
 </body>
 
