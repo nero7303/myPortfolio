@@ -9,9 +9,10 @@
    let txt = Content.split('').join('</span><span>');
    document.querySelector('.split').innerHTML = '<span>' + txt + '</span>';
 
-  
-
-
+  //텍스트 쪼개기 - #contact>div>h2
+ let contact = document.querySelector('#contact>div>h2');
+ let text = contact.innerText.split('').join('</span><span>');
+document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>';
 
 
   
@@ -48,6 +49,7 @@
   function scrollmove() {
     let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop >section[0].offsetTop - window.innerHeight ) {
+
       section[0].classList.add('show');    
       homeInner_h2.classList.add('show');
         homeInner_p.classList.add('show');
@@ -70,8 +72,13 @@
     }
     if (scrollTop > section[3].offsetTop - window.innerHeight / 4 ) {
       section[3].classList.add('show');
-      let h2 = document.querySelector('#contact>div>h2');
-      h2.classList.add('show');
+      document.querySelectorAll('#contact>div>h2>span').forEach((elem,index)=>{
+        setTimeout(() => {
+          elem.classList.add('show');
+        }, 50 * index);
+      });
+        let h2 = document.querySelector('#contact>div>h2');
+        h2.classList.add('show');
         let strong = document.querySelector('#contact>div>strong');
         strong.classList.add('show');
         let p = document.querySelector('#contact>div>p');

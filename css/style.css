@@ -112,20 +112,18 @@ body>section.show .about-inner>.about-section2 {
 
 #contact {
   opacity: 0;
-  transform: translateY(9rem) scale(0.8);
-  transition: all 1.2s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 1.5s linear;
 }
 
 #contact.show {
   opacity: 1;
-  transform: translateY(0) scale(1);
-}
 
+}
 
 #contact>div>h2 {
   opacity: 0;
-  transition: all 1s ease-in-out;
-  transform: translateY(-200px);
+  transition: all 1s linear;
+  transform: translateY(-100px);
 }
 
 #contact>div>h2.show {
@@ -133,12 +131,23 @@ body>section.show .about-inner>.about-section2 {
   transform: translateY(0);
 }
 
+#contact>div>h2>span {
+  opacity: 0;
+  transition: all .3s ease-out;
+  transform: translateX(200px);
+}
+
+#contact>div>h2>span.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 
 #contact>div>strong {
   opacity: 0;
-  transition: all 1s ease-in-out;
-  transform: translateY(-200px);
+  transition: all 1s linear;
+  transform: translateY(-100px);
 }
 
 #contact>div>strong.show {
@@ -148,8 +157,8 @@ body>section.show .about-inner>.about-section2 {
 
 #contact>div>p {
   opacity: 0;
-  transition: all 1s ease-in-out;
-  transform: translateY(-200px);
+  transition: all 1s linear;
+  transform: translateY(-100px);
 }
 
 #contact>div>p.show {
