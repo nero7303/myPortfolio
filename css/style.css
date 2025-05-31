@@ -18,25 +18,25 @@ body>section.show>.home-inner {
 
 .home-inner>h2 {
   opacity: 0;
-  transform: translateY(-200px);
+  transform: translateX(-200px);
   transition: all 1s ease-out;
 }
 
 .home-inner>h2.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 
 }
 
 .home-inner>p {
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateX(200px);
   transition: all 1s ease-out;
 }
 
 .home-inner>p.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 #about {
