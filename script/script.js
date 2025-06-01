@@ -83,7 +83,8 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
         strong.classList.add('show');
         let p = document.querySelector('#contact>div>p');
         p.classList.add('show');
-
+      let link = document.querySelector('.link>a');
+      link.classList.add('show');
         };
       };
       window.addEventListener('scroll',scrollmove);

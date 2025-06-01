@@ -166,10 +166,16 @@ body>section.show .about-inner>.about-section2 {
   transform: translateY(0);
 }
 
+.link>a {
+  opacity: 0;
+  transition: all 1s linear;
+  transform: translateY(-100px);
+}
 
-
-
-
+.link>a.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -504,13 +510,10 @@ body>section.show .about-inner>.about-section2 {
   color: #fff;
 }
 
-#contact>div>.link>ul {
-  display: flex;
-  gap: 10px;
 
-}
 
-#contact>div>.link>ul>li>a {
+.link>a {
+  display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
