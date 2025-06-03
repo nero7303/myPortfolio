@@ -104,17 +104,26 @@ const scrollreveal = function () {
       const scrollvisual = function () {
   let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
   const visual = document.querySelectorAll('.visual');
+  const h2 = document.querySelector('.work-inner>h2');
+  if (scrollTop + window.innerHeight / 1 >= h2.offsetTop + 2000) {
+    h2.classList.add('show');
+ }
  visual.forEach((el)=>{
    if (scrollTop + window.innerHeight / 2 >= el.offsetTop + 2500 ) {
       el.classList.add('show');
+    
+     
+      
   };
  });
+ 
 };
 
       window.addEventListener('scroll',scrollreveal);
       window.addEventListener('scroll', scrollvisual);
 
 
+        
 
 
 

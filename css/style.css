@@ -99,6 +99,15 @@ body>section.show .about-inner>.about-section2 {
 
 }
 
+.work-inner>h2 {
+  opacity: 0;
+
+}
+
+.work-inner>h2.show {
+  opacity: 1;
+}
+
 
 .site1>.reveal {
   opacity: 0;
@@ -114,11 +123,11 @@ body>section.show .about-inner>.about-section2 {
     opacity: 0;
   }
 
-  60% {
+  50% {
     opacity: 0;
   }
 
-  70% {
+  80% {
     opacity: 1;
   }
 
@@ -516,6 +525,13 @@ body>section.show .about-inner>.about-section2 {
 
 }
 
+.work-inner>h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
 
 .site1>p {
   position: absolute;
@@ -523,7 +539,7 @@ body>section.show .about-inner>.about-section2 {
   font-weight: normal;
   font-size: 40px;
   left: 100px;
-  top: 424px;
+  top: 450px;
 }
 
 .site2 {
