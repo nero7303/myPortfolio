@@ -50,6 +50,28 @@ body>section.show>.home-inner {
   transform: translateY(0) scale(1);
 }
 
+.profile>ul>li:nth-of-type(5) {
+  position: relative;
+  margin-top: 10px;
+  animation: bounce 0.7s 1s infinite alternate ease-in-out;
+
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(3px);
+
+  }
+
+  to {
+    transform: translateY(0);
+
+  }
+}
+
+
+
+
 .about-section1>div>h2 {
   opacity: 0;
   transition: all 1.5s linear;
@@ -106,6 +128,25 @@ body>section.show .about-inner>.about-section2 {
 
 .work-inner>h2.show {
   opacity: 1;
+  animation: h2 1s linear forwards;
+}
+
+@keyframes h2 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -463,24 +504,6 @@ body>section.show .about-inner>.about-section2 {
   margin: 5.5px 0;
 }
 
-.profile>ul>li:nth-of-type(5) {
-  position: relative;
-  margin-top: 10px;
-  animation: bounce 0.7s 1s infinite alternate ease-in-out;
-
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(3px);
-
-  }
-
-  to {
-    transform: translateY(0);
-
-  }
-}
 
 
 .about-section2 {
