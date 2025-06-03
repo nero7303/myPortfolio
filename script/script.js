@@ -126,7 +126,15 @@ const scrollreveal = function () {
         
 
 
-
+gsap.to(".section3-inner > ul > li", {
+  duration: 1,
+  rotation: 360,
+  opacity: 1, 
+  delay: 3, 
+  stagger: 0.2,
+  ease: "sine.out", 
+  force3D: true
+});
 
 
   

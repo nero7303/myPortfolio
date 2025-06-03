@@ -322,6 +322,7 @@ body>section.show .about-inner>.about-section2 {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: url(../imgaes/computer.png) no-repeat top;
   background-size: cover;
 
@@ -387,7 +388,7 @@ body>section.show .about-inner>.about-section2 {
 
 #about {
   width: 100%;
-  height: 800px;
+  height: 900px;
   background: #FFF8F8;
 }
 
@@ -509,6 +510,30 @@ body>section.show .about-inner>.about-section2 {
 
 }
 
+.about-section3 {
+
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.section3-inner {
+  height: inherit;
+}
+
+.section3-inner>h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.section3-inner>ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 
 /* work */
 #work {
@@ -529,7 +554,7 @@ body>section.show .about-inner>.about-section2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
-  padding: 20px 0;
+  padding: 0 0 40px 0;
 }
 
 
