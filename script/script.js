@@ -65,11 +65,8 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
             elem.classList.add('show');
         }, 50 * index);
       });
+    };
 
-    }
-    if (scrollTop > section[2].offsetTop - window.innerHeight / 4 ) {
-      section[2].classList.add('show');
-    }
     if (scrollTop > section[3].offsetTop - window.innerHeight / 4 ) {
       section[3].classList.add('show');
       document.querySelectorAll('#contact>div>h2>span').forEach((elem,index)=>{
@@ -90,8 +87,32 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
       window.addEventListener('scroll',scrollmove);
 
 
-    
+ 
+//  리빌효과
+const scrollreveal = function () {
+  let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+  const reveal = document.querySelectorAll('.reveal');
+ reveal.forEach((el)=>{
+   if (scrollTop + window.innerHeight / 2 >= el.offsetTop + 1500 ) {
+      el.classList.add('show');
+  };
+ });
+};
 
+      window.addEventListener('scroll',scrollreveal);
+
+      const scrollvisual = function () {
+  let scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+  const visual = document.querySelectorAll('.visual');
+ visual.forEach((el)=>{
+   if (scrollTop + window.innerHeight / 2 >= el.offsetTop + 2500 ) {
+      el.classList.add('show');
+  };
+ });
+};
+
+      window.addEventListener('scroll',scrollreveal);
+      window.addEventListener('scroll', scrollvisual);
 
 
 
