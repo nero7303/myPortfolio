@@ -55,7 +55,15 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
         homeInner_p.classList.add('show');
     }
      if (scrollTop > section[1].offsetTop - window.innerHeight / 4) {
-   
+   gsap.to(".section3-inner > ul > li", {
+  duration: 1,
+  rotation: 360,
+  opacity: 1, 
+  delay: 1, 
+  stagger: 0.2,
+  ease: "sine.out", 
+  force3D: true
+});
      section[1].classList.add('show');
      profile.classList.add('show');
        let h2 = document.querySelector('.about-section1>div>h2 ');
@@ -126,15 +134,7 @@ const scrollreveal = function () {
         
 
 
-gsap.to(".section3-inner > ul > li", {
-  duration: 1,
-  rotation: 360,
-  opacity: 1, 
-  delay: 3, 
-  stagger: 0.2,
-  ease: "sine.out", 
-  force3D: true
-});
+
 
 
   

@@ -610,13 +610,30 @@ body>section.show .about-inner>.about-section2 {
 
 /* contact */
 #contact {
-  background: url(../imgaes/contactBg.png) no-repeat bottom;
-  background-size: cover;
+  background: linear-gradient(-45deg, #b5fffc, #ffdee9, #fff8f8);
+  background-size: 400% 400%;
+  animation: colorChange 4s ease infinite forwards;
   height: 900px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 #contact>div {
   width: 1160px;
@@ -634,14 +651,14 @@ body>section.show .about-inner>.about-section2 {
 #contact>div>h2 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #4A4A4A;
   font-weight: 600;
 }
 
 #contact>div>strong {
 
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #4A4A4A;
   font-weight: 400;
   font-size: 80px;
 
@@ -650,7 +667,7 @@ body>section.show .about-inner>.about-section2 {
 #contact>div>p {
   font-weight: 400;
   font-size: 18px;
-  color: #fff;
+  color: #4A4A4A;
 }
 
 
@@ -660,6 +677,7 @@ body>section.show .about-inner>.about-section2 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #4A4A4A;
+
 
 }
