@@ -53,6 +53,7 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
       section[0].classList.add('show');    
       homeInner_h2.classList.add('show');
         homeInner_p.classList.add('show');
+
     }
      if (scrollTop > section[1].offsetTop - window.innerHeight / 4) {
    gsap.to(".section3-inner > ul > li", {
@@ -82,6 +83,10 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
           elem.classList.add('show');
         }, 50 * index);
       });
+       document.querySelectorAll(".header-inner a").forEach(el=>{
+        el.style.color = "#fff";
+        
+      });
         let h2 = document.querySelector('#contact>div>h2');
         h2.classList.add('show');
         let strong = document.querySelector('#contact>div>strong');
@@ -90,7 +95,12 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
         p.classList.add('show');
       let link = document.querySelector('.link>a');
       link.classList.add('show');
-        };
+        }else{
+            document.querySelectorAll(".header-inner a").forEach(el=>{
+        el.style.color = "#0118D8";
+        
+      });
+        }
       };
       window.addEventListener('scroll',scrollmove);
 
@@ -131,7 +141,7 @@ const scrollreveal = function () {
       window.addEventListener('scroll', scrollvisual);
 
 
-        
+    
 
 
 

@@ -363,22 +363,13 @@ body>section.show .about-inner>.about-section2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: url(../imgaes/computer.png) no-repeat top;
   background-size: cover;
-
-
-
+  background-attachment: fixed;
 }
 
-#home::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: -100;
-}
+
+
 
 
 
@@ -610,29 +601,16 @@ body>section.show .about-inner>.about-section2 {
 
 /* contact */
 #contact {
-  background: linear-gradient(-45deg, #b5fffc, #ffdee9, #fff8f8);
-  background-size: 400% 400%;
-  animation: colorChange 4s ease infinite forwards;
-  height: 900px;
+  background: url(../imgaes/night.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
-@keyframes colorChange {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 100%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 
 #contact>div {
@@ -645,29 +623,31 @@ body>section.show .about-inner>.about-section2 {
   align-items: center;
   gap: 30px;
 
+
 }
 
 
 #contact>div>h2 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
-  color: #4A4A4A;
   font-weight: 600;
+  color: #fff;
 }
 
 #contact>div>strong {
 
   font-family: "Montserrat", sans-serif;
-  color: #4A4A4A;
   font-weight: 400;
   font-size: 80px;
+  color: #fff;
 
 }
 
 #contact>div>p {
   font-weight: 400;
   font-size: 18px;
-  color: #4A4A4A;
+
+  color: #fff;
 }
 
 
@@ -677,7 +657,7 @@ body>section.show .about-inner>.about-section2 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #4A4A4A;
+  color: #fff;
 
 
 }

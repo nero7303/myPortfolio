@@ -142,8 +142,13 @@ table {
   box-sizing: border-box;
   line-height: 1;
 
+
 }
 
 img {
   vertical-align: top;
+}
+
+body {
+  background: #FFF8F8;
 }
