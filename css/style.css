@@ -4,6 +4,7 @@
 
 /* 애니메이션 */
 
+
 body>section>.home-inner {
   opacity: 0;
   transition: all 1s ease-in;
@@ -89,7 +90,7 @@ body>section.show>.home-inner {
 
 .about-section1>div>.profile {
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
   transform: rotateY(180deg) perspective(800px);
 
 }
@@ -365,7 +366,7 @@ body>section.show .about-inner>.about-section2 {
   align-items: center;
   background: url(../imgaes/computer.png) no-repeat top;
   background-size: cover;
-
+  background-attachment: fixed;
 }
 
 

@@ -76,7 +76,7 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
       });
     };
 
-    if (scrollTop > section[3].offsetTop - window.innerHeight / 4 ) {
+    if (scrollTop > section[3].offsetTop - window.innerHeight / 10) {
       section[3].classList.add('show');
       document.querySelectorAll('#contact>div>h2>span').forEach((elem,index)=>{
         setTimeout(() => {
