@@ -136,11 +136,11 @@ const scrollreveal = function () {
  });
  
 };
-
       window.addEventListener('scroll',scrollreveal);
       window.addEventListener('scroll', scrollvisual);
 
 
+ 
     
 
 

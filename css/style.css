@@ -34,7 +34,7 @@ body>section.show>.home-inner {
 .home-inner>h2 {
   opacity: 0;
   transform: translateY(-200px);
-  transition: all 1s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 .home-inner>h2.show {
@@ -46,7 +46,7 @@ body>section.show>.home-inner {
 .home-inner>p {
   opacity: 0;
   transform: translateY(-200px);
-  transition: all 1s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 .home-inner>p.show {
