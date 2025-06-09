@@ -3,7 +3,7 @@
   let homeInner_h2 = document.querySelector('.home-inner>h2');
   let homeInner_p = document.querySelector('.home-inner > p');
   let profile = document.querySelector('.profile');
-
+  let headerNav = document.querySelector('#header');
   //텍스트 쪼개기 - .about-section2>div>h3
   let Content = document.querySelector('.split').innerText;
    let txt = Content.split('').join('</span><span>');
@@ -53,7 +53,7 @@ document.querySelector('#contact>div>h2').innerHTML = '<span>' + text + '</span>
       section[0].classList.add('show');    
       homeInner_h2.classList.add('show');
         homeInner_p.classList.add('show');
-
+      headerNav.classList.add('show');
     }
      if (scrollTop > section[1].offsetTop - window.innerHeight / 4) {
    gsap.to(".section3-inner > ul > li", {
